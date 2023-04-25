@@ -9,6 +9,8 @@
 
 </head>
 <body>
+
+
     <div id="content">
 
 
@@ -65,7 +67,7 @@
                 <b> Contact for further information</b>
                 <p>Serdyukov Antoniy: aserdyukov@uclan.ac.uk</p>
 
-                April 2023
+                <p>April 2023</p>
 
 
         </div>
@@ -90,24 +92,35 @@
             <p><b>Here is what you need to do:</b></p>
             <p>You have to navigate trough 5 questions until the end.
             While doing so, each time you need to decide which "path" to take: <b style="color:green;">Green</b> or <b style="color:blue;">Blue</b>.
-            These path are absolutely <b>IDENTICAL</b>. <p>It does not matter which one you pick.</p>
-            </p>
+            These paths are absolutely <b>IDENTICAL</b>. <p>It does not matter which one you pick.</p>
+            <h3 id="questions">
+
+            </h3>
 
         </div>
 
-        <div id="tests">
+        <div id="goodbye" style="display: none;">
+            <b><h2>Thank you for participating!</h2></b>
+            <p>This is the information that is going to be sent:</p>
+            <p id="sentInfo">
+
+            </p>
+            <button onclick="sendInfo">Send Information</button>
+        </div>
+
+        <div id="tests" style="display: none">
             <div id="buttons">
-                <button onclick="changeText(1)">Option 1</button>
-                <button onclick="changeText(2)">Option 2</button>
-                <button onclick="changeText(3)">Option 3</button>
+                <button class="option1" onclick="changeText(1)">Option 1</button>
+                <button class="option2" onclick="changeText(2)">Option 2</button>
+                <button class="option3" onclick="changeText(3)">Option 3</button>
 
             </div>
 
             <div id="dropdown">
                 <select id="dropdown_menu">
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+                    <option class="option1" value="1">Option 1</option>
+                    <option class="option2" value="2">Option 2</option>
+                    <option class="option3" value="3">Option 3</option>
 
                 </select>
                 <button onclick="changeText(4)">Proceed</button>
