@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>A/B Tests</title>
+
+</head>
+<body>
+    <div id="content">
+
+
+        <div id="info">
+
+               <p> <b>Usability of Mobile UIs: Participant Information Sheet</b> </p>
+
+                <p>You are being invited to take part in a research study as part of a student project.
+                    Before you decide it is important for you to understand why the research is being done
+                    and what it will involve.
+
+                    Thank you for reading this.
+                </p>
+
+
+                <b>Who will conduct the research?</b>
+                <p>Serdyukov Antoniy</p>
+
+                <b>Title of the Research</b>
+                <p>Assessing the Usability of Mobile UIs</p>
+
+                <b>What is the aim of the research?</b>
+                <p>The purpose is to determine whether specific UI designs enable users to be more efficient in completing certain tasks, where efficiency is measured in terms of speed and rate of errors.
+                </p>
+
+                <b>Why have I been chosen?</b>
+                <p>You have been selected as you are on a Computing course at UCLan Cyprus.</p>
+
+                <b>What would I be asked to do if I took part?</b>
+                <p>You will be asked to participate in an experiment where you would use a mobile device to complete given tasks.
+                    Your answers will be recorded.</p>
+
+                <b> What happens to the data collected?</b>
+                <p>The data collected will be annonymised and used to inform a series of paper publications.</p>
+
+                <b>How is confidentiality maintained?</b>
+                <p>All results will be annonymised so that no names will be used. Participant information will be kept under lock and key and destroyed when the research project comes to an end.
+                </p>
+
+                <b>What happens if I do not want to take part or if I change my mind?</b>
+                <p>It is up to you to decide whether to take part. If you decide to take part you will be asked to sign a consent form. If you decide to take part you are still free to withdraw at any time without giving a reason and without detriment to yourself.
+
+                </p>
+
+                <b> What is the duration of the research?</b>
+                <p>Participation in the experiment may take approximately <b>2</b> minutes.</p>
+
+                <b>Where will the research be conducted?</b>
+                <p>Online.</p>
+
+                <b>Will the outcomes of the research be published?</b>
+                <p>The finding of this research may be published as a paper.</p>
+
+                <b> Contact for further information</b>
+                <p>Serdyukov Antoniy: aserdyukov@uclan.ac.uk</p>
+
+                April 2023
+
+
+        </div>
+
+        <div id="consent" style="display: none">
+            <p><b>By pressing "Proceed", I agree to the following:</b></p>
+            <p>1.	I confirm that I have read and understood the information sheet dated April 2023 for the above study. I have had the opportunity to consider the information, ask questions and have had these answered satisfactorily.
+            </p>
+            <p>2.	I understand that my participation is voluntary and that I am free to withdraw at any time, without giving any reason.
+            </p>
+            <p>3.  I understand that any information given by me may be used in future reports, articles or presentations by the researcher.
+            </p>
+            <p>4.  I understand that my name will not appear in any reports, articles or presentations.
+            </p>
+            <p> 5.	I agree to take part in the above study.
+            </p>
+
+
+        </div>
+
+        <div id="explanation" style="display: none;">
+            <p><b>Here is what you need to do:</b></p>
+            <p>You have to navigate trough 5 questions until the end.
+            While doing so, each time you need to decide which "path" to take: <b style="color:green;">Green</b> or <b style="color:blue;">Blue</b>.
+            These path are absolutely <b>IDENTICAL</b>. <p>It does not matter which one you pick.</p>
+            </p>
+
+        </div>
+
+        <div id="tests">
+            <div id="buttons">
+                <button onclick="changeText(1)">Option 1</button>
+                <button onclick="changeText(2)">Option 2</button>
+                <button onclick="changeText(3)">Option 3</button>
+
+            </div>
+
+            <div id="dropdown">
+                <select id="dropdown_menu">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+
+                </select>
+                <button onclick="changeText(4)">Proceed</button>
+            </div>
+
+        </div>
+        <div>
+            <button id="button" onclick="changeText()">Proceed</button>
+        </div>
+    </div>
+</body>
+</html>
